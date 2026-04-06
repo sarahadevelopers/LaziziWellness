@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lazizi® Wellness | Premium Mobile Massage - Seattle & Bellevue</title>
+    <!-- Jost font & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <a href="https://wa.me/14254238888" class="whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+           <div class="logo">
+                <!--  <img src="Lazizi-favicon.webp" alt="Lazizi Wellness" onerror="this.src='https://placehold.co/60x60?text=L'">-->
+                Lazizi<sup class="r-sup">®</sup> <!--  <span>Wellness</span> -->
+            </div>
+            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog.html">Wellness Journal</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="openBookingBtn" class="book-btn"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero fade-section">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://assets.mixkit.co/videos/4744/4744-720.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Lazizi<sup class="r-sup">®</sup> Wellness |</h1>
+                <p class="hero-tagline">Precision recovery & executive wellness treatments. </p>
+                <div class="hero-btns">
+                    <a href="#" id="heroBookBtn" class="btn btn-primary">Book Now</a>
+                    <a href="services.html" class="btn btn-outline">Clinical Treatments</a>
+                </div>
+                <div class="hero-trust">
+                    <span><i class="fas fa-check-circle"></i> WA Licensed LMTs</span>
+                    <span><i class="fas fa-spa"></i> In-studio or mobile outcall.</span>
+                    <span><i class="fas fa-clock"></i> Instant Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section fade-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-sub">Clinical recovery & deep tissue for Seattle's active lifestyle & Bellevue's executives.</div>
+        <div class="services-grid">
+            <a href="#" class="service-card" onclick="openBookingWithService('Deep Tissue Recovery'); return false;">
+                <img src="image - 2026-03-12T143909.047.webp" alt="Massage Therapy">
+                <div class="overlay"><h3>Deep Tissue</h3><p>Tech-neck relief, Chronic pain</p><span class="explore">Book →</span></div>
+            </a>
+            <a href="#" class="service-card" onclick="openBookingWithService('Swedish Massage'); return false;">
+                <img src="image - 2026-03-12T153341.677.webp" alt="Swedish Massage">
+                <div class="overlay"><h3>Swedish Massage</h3><p>Intimate, relaxing & rejuvenating</p><span class="explore">Book →</span></div>
+            </a>
+            <a href="#" class="service-card" onclick="openBookingWithService('Medical Massage'); return false;">
+                <img src="image - 2026-03-12T142732.961.webp" alt="Medical Massage">
+                <div class="overlay"><h3>Medical Massage</h3><p>Relief, Detox & wellness</p><span class="explore">Book →</span></div>
+            </a>
+        </div>
+        <div class="trust-strip">
+            <div class="trust-item"><i class="fas fa-certificate"></i> WA Licensed Massage Therapists</div>
+            <div class="trust-item"><i class="fas fa-leaf"></i> Locally-Sourced, Vegan Topicals</div>
+            <div class="trust-item"><i class="fas fa-mobile-alt"></i> Mobile Outcall Available</div>
+            <div class="trust-item"><i class="fas fa-shield-alt"></i> HSA/FSA Eligible</div>
+        </div>
+
+        <h3 style="font-size: 2rem; font-weight: 350; color: var(--dark-gold); text-align: center; margin: 4rem 0 2rem;">Signature Recovery Sessions</h3>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <div class="featured-header"><h3>Deep Tissue Recovery</h3><span class="featured-price">$130</span></div>
+                <div class="featured-content"><p>Targeted myofascial release for chronic tension & "tech-neck". Ideal for desk workers.</p><button class="featured-btn" onclick="openBookingWithService('Deep Tissue Recovery')">Book Now</button></div>
+            </div>
+            <div class="featured-card">
+                <div class="featured-header"><h3>The Eastside Executive</h3><span class="featured-price">$245</span></div>
+                <div class="featured-content"><p>90-min bespoke deep tissue + aromatherapy. Designed for high-pressure weeks in Bellevue.</p><button class="featured-btn" onclick="openBookingWithService('Eastside Executive Ritual')">Book Now</button></div>
+            </div>
+            <div class="featured-card mobile-service">
+                <div class="featured-header"><h3>Elite Mobile Wellness</h3><span class="featured-price">From $180</span></div>
+                <div class="featured-content"><p>Serving Queen Anne, Medina, Clyde Hill. We bring the table & luxury linens.</p>
+                <ul class="mobile-perks"><li><i class="fas fa-car"></i> 15-mile radius included</li><li><i class="fas fa-shield-alt"></i> Background-checked LMT</li></ul>
+                <button class="featured-btn" onclick="openBookingWithService('Mobile Outcall Massage')">Book Mobile Session</button></div>
+            </div>
+        </div>
+        <div class="location-focus">
+            <h3 style="color: var(--dark-gold);">Elite Mobile Massage: From Seattle Skyline to Bellevue’s Eastside</h3>
+            <p>Bringing clinical recovery to your home in <strong>Queen Anne</strong>, your office in <strong>South Lake Union</strong>, or your estate in <strong>Medina & West Bellevue</strong>.</p>
+            <div class="wa-license">WA Licensed Massage Therapist (LMT) #MA6098723</div>
+        </div>
+    </section>
+
+    <section id="about" class="section fade-section">
+        <div class="about-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+            <div style="border-radius:30px; overflow:hidden;"><img src="image - 2026-03-12T142147.961.webp" style="width:100%; height:auto; object-fit:cover;" alt="Lead Therapist"></div>
+            <div><h2 class="section-title" style="text-align:left;">Meet Your Lead Practitioner</h2><p><strong>Licensed Massage Therapist (LMT) | WA License #MA6098723</strong></p><p>With over 9 years of clinical experience specializing in advanced myofascial release and neuromuscular therapy. I help King County’s high-performers move without pain. Every session includes a structural assessment to ensure data-driven recovery.</p><ul><li><i class="fas fa-award"></i> Board Certified (NCBTMB)</li><li><i class="fas fa-microscope"></i> Tech-Neck & Postural Specialist</li><li><i class="fas fa-heartbeat"></i> Sports & Medical Massage Certified</li></ul></div>
+        </div>
+    </section>
+
+    <!-- booking modal -->
+    <div id="bookingModal" class="booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+            <h3 style="margin-bottom:1rem;">Secure your session – $50 deposit</h3>
+           <form id="dynamicBookingForm" class="booking-form" method="POST">
+    <!-- FormSubmit configuration (sends to info@laziziwellness.com) -->
+    <input type="hidden" name="_subject" value="🆕 New Booking Request - Lazizi® Wellness">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <div class="form-row">
+        <div class="form-group">
+            <label for="clientName"><i class="fas fa-user"></i> Full Name *</label>
+            <input type="text" id="clientName" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+            <label for="clientEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+            <input type="email" id="clientEmail" name="email" placeholder="john@example.com" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="clientPhone"><i class="fas fa-phone"></i> Phone Number *</label>
+            <input type="tel" id="clientPhone" name="phone" placeholder="(425) 555-1234" required>
+        </div>
+        <div class="form-group">
+            <label for="serviceSelect"><i class="fas fa-spa"></i> Select Treatment *</label>
+            <select id="serviceSelect" name="service" required>
+                <option value="">Choose a service...</option>
+                <option value="Deep Tissue Recovery ($130)">🔬 Deep Tissue Recovery — $130</option>
+                <option value="Medical Massage ($160)">🏥 Medical Massage — $160</option>
+                <option value="Swedish Massage ($150)">💧 Swedish Massage — $150</option>
+                <option value="Eastside Executive Ritual ($245)">💼 Eastside Executive Ritual — $245</option>
+                <option value="Mobile Outcall Massage ($180+)">🚗 Mobile Outcall (Seattle/Bellevue) — $180+</option>
+                <option value="Couples Massage ($240)">💑 Couples Massage — $240</option>
+                <option value="Prenatal Massage ($140)">🤰 Prenatal Massage — $140</option>
+                <option value="Hot Stone Massage ($155)">🔥 Hot Stone Massage — $155</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="appointmentDate"><i class="fas fa-calendar-alt"></i> Preferred Date *</label>
+            <input type="date" id="appointmentDate" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="appointmentTime"><i class="fas fa-clock"></i> Preferred Time *</label>
+            <input type="time" id="appointmentTime" name="time" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="notes"><i class="fas fa-notes-medical"></i> Health Concerns & Special Requests</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="e.g., Tech-neck pain, lower back issues, pregnancy (weeks), allergies, preferred pressure (light/medium/firm)..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="location"><i class="fas fa-map-marker-alt"></i> Service Location</label>
+        <select id="location" name="location">
+            <option value="">Select location (for outcall)</option>
+            <option value="In-studio">In-studio (Bellevue)</option>
+            <option value="Seattle - Downtown">Seattle - Downtown</option>
+            <option value="Seattle - Capitol Hill">Seattle - Capitol Hill</option>
+            <option value="Seattle - Ballard">Seattle - Ballard</option>
+            <option value="Seattle - South Lake Union">Seattle - South Lake Union</option>
+            <option value="Bellevue - Downtown">Bellevue - Downtown</option>
+            <option value="Bellevue - Medina">Bellevue - Medina</option>
+            <option value="Bellevue - Clyde Hill">Bellevue - Clyde Hill</option>
+            <option value="Redmond">Redmond</option>
+            <option value="Kirkland">Kirkland</option>
+            <option value="Other (will specify in notes)">Other (will specify in notes)</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="hearAbout"><i class="fas fa-globe"></i> How did you hear about us?</label>
+        <select id="hearAbout" name="referral_source">
+            <option value="">Select an option</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Friend/Family Referral">Friend/Family Referral</option>
+            <option value="Yelp">Yelp</option>
+            <option value="Walk-in">Walk-in</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="policy-check">
+        <input type="checkbox" id="termsCheckbox" name="terms_accepted" value="yes" required>
+        <label for="termsCheckbox">
+            I agree to the <strong>Cancellation & Professional Conduct Policy</strong> 
+            (24-hour notice required • $50 deposit non-refundable for late cancellation/no-show)
+        </label>
+    </div>
+
+    <div class="policy-check">
+        <input type="checkbox" id="smsConsent" name="sms_consent" value="yes">
+        <label for="smsConsent">
+            I consent to receive SMS reminders and updates about my appointment. 
+            <span style="font-size: 0.75rem; color: var(--text-light);">(Message & data rates may apply)</span>
+        </label>
+    </div>
+
+    <div class="booking-summary">
+        <div class="summary-row">
+            <span>Session Deposit Required:</span>
+            <strong>$50.00</strong>
+        </div>
+        <div class="summary-row">
+            <span>Remaining Balance:</span>
+            <strong>Due at service</strong>
+        </div>
+    </div>
+
+    <button type="submit" class="submit-payment-btn">
+        <i class="fas fa-lock"></i> Secure Booking — Pay $50 Deposit
+    </button>
+
+    <div class="secure-note">
+        <i class="fas fa-shield-alt"></i> Your payment is encrypted and secure. 
+        Deposit applied toward final service total.
+    </div>
+</form>
+        </div>
+    </div>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+<section id="testimonials" class="section fade-section">
+    <div class="testimonial-container">
+        <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        
+        <div class="testimonial-slide active">
+            <p>"Best deep tissue in Seattle! As a Microsoft employee, my neck pain is finally gone. The therapist really understood my posture issues from sitting at a desk all day."</p>
+            <div class="reviewer">
+                <div class="avatar"><span>JD</span></div>
+                <div>
+                    <div class="client-name">Jordan D.</div>
+                    <div class="review-source">Bellevue, WA</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-slide">
+            <p>"Mobile service to my Medina home was flawless. Luxury experience without dealing with Seattle traffic. The table, linens, everything was professional."</p>
+            <div class="reviewer">
+                <div class="avatar"><span>LS</span></div>
+                <div>
+                    <div class="client-name">Lisa S.</div>
+                    <div class="review-source">Medina, WA</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-slide">
+            <p>"The Eastside Executive Ritual is worth every penny. As a busy executive, having a therapist who understands corporate stress is rare. Highly recommend!"</p>
+            <div class="reviewer">
+                <div class="avatar"><span>MP</span></div>
+                <div>
+                    <div class="client-name">Michael P.</div>
+                    <div class="review-source">Redmond, WA</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-slide">
+            <p>"Finally found a massage therapist who listens. My chronic lower back pain has improved dramatically after just a few sessions. Professional and skilled."</p>
+            <div class="reviewer">
+                <div class="avatar"><span>DC</span></div>
+                <div>
+                    <div class="client-name">David C.</div>
+                    <div class="review-source">Seattle, WA</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="section fade-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="section-sub">Serving Seattle & Bellevue with premium mobile and in-studio services</div>
+    
+    <div class="contact-grid">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Serving Seattle & Bellevue (mobile outcall available)</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+14254238888">+1 (425) 423-8888</a>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@laziziwellness.com">info@laziziwellness.com</a>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>Daily 8am – 8pm | 24/7 online booking</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>WA Licensed LMT #MA6098723</span>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21530.67945033032!2d-122.27568001524798!3d47.61429841768853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac2c0574301%3A0x2b8e8c8b9d9e4f5a!2sBellevue%2C%20WA!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+   <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <!--  <img src="Lazizi-favicon.webp" alt="Lazizi Wellness" onerror="this.src='https://placehold.co/40x40?text=L'">-->
+                    <span>Lazizi<sup class="r-sup">®</sup> Wellness</span>
+                </div>
+                <p class="footer-description">WA LMT #MA6098723 | Premium mobile & studio massage for King County.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Service Areas Column -->
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <div class="service-areas">
+                    <div class="area-group">
+                        <strong>Seattle:</strong>
+                        <span>Capitol Hill, Ballard, South Lake Union, Queen Anne</span>
+                    </div>
+                    <div class="area-group">
+                        <strong>Bellevue:</strong>
+                        <span>Clyde Hill, Medina, Somerset, Bridle Trails</span>
+                    </div>
+                </div>
+                <div class="policy-note">
+                    <i class="fas fa-clock"></i> 24h cancellation notice required<br>
+                    <i class="fas fa-dollar-sign"></i> $50 deposit non-refundable for late cancel/no-show
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+           <div class="copyright">
+            © <span id="currentYear"></span> Lazizi Beauty. All rights reserved. <br>Designed & Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" style="color: var(--gold);">Saraha Developers</a>
+        </div>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span class="separator">|</span>
+                <a href="#">Terms of Service</a>
+                <span class="separator">|</span>
+                <a href="#">HIPAA Compliance</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>
