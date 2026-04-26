@@ -28,108 +28,113 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="services.css">
     
-    <!-- JSON-LD Structured Data: LocalBusiness + Services + AggregateRating -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HealthAndBeautyBusiness",
-      "name": "Lazizi Wellness",
-      "alternateName": "Lazizi Massage Therapy",
-      "image": "https://laziziwellness.com/lazizi-favicon.webp",
-      "url": "https://laziziwellness.com",
-      "telephone": "+14254238888",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10606 NE 20th St",
-        "addressLocality": "Bellevue",
-        "addressRegion": "WA",
-        "postalCode": "98004",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 47.610378,
-        "longitude": -122.200676
-      },
-      "areaServed": [
-        "Seattle",
-        "Bellevue",
-        "Redmond",
-        "Kirkland",
-        "Medina",
-        "Clyde Hill",
-        "Queen Anne",
-        "South Lake Union"
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "08:00",
-          "closes": "20:00"
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Lazizi Wellness",
+  "alternateName": "Lazizi Massage Therapy",
+  "image": "https://laziziwellness.com/lazizi-favicon.webp",
+  "url": "https://laziziwellness.com/",
+  "telephone": "+14254238888",
+  "priceRange": "$$",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10606 NE 20th St",
+    "addressLocality": "Bellevue",
+    "addressRegion": "WA",
+    "postalCode": "98004",
+    "addressCountry": "US"
+  },
+
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.610378,
+    "longitude": -122.200676
+  },
+
+  "areaServed": [
+    { "@type": "City", "name": "Seattle" },
+    { "@type": "City", "name": "Bellevue" },
+    { "@type": "City", "name": "Redmond" },
+    { "@type": "City", "name": "Kirkland" },
+    { "@type": "City", "name": "Medina" },
+    { "@type": "City", "name": "Clyde Hill" },
+    { "@type": "City", "name": "Queen Anne" },
+    { "@type": "City", "name": "South Lake Union" }
+  ],
+
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Massage Therapy Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "price": "130",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Deep Tissue Recovery",
+          "description": "Targeted myofascial release for chronic tension and tech-neck."
         }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Massage Therapy Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Deep Tissue Recovery",
-              "description": "Targeted myofascial release for chronic tension and tech-neck.",
-              "price": "130",
-              "priceCurrency": "USD"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Medical Massage",
-              "description": "Clinical approach for injury rehabilitation and chronic pain management.",
-              "price": "160",
-              "priceCurrency": "USD"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Swedish Massage",
-              "description": "Gentle technique to reduce swelling, detoxify, and boost immunity.",
-              "price": "150",
-              "priceCurrency": "USD"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Eastside Executive Ritual",
-              "description": "Bespoke deep tissue + aromatherapy + hot stones for high-performers.",
-              "price": "245",
-              "priceCurrency": "USD"
-            }
-          }
-        ]
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "502",
-        "bestRating": "5",
-        "worstRating": "1"
+      {
+        "@type": "Offer",
+        "price": "160",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Massage",
+          "description": "Clinical approach for injury rehabilitation and chronic pain management."
+        }
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Lead LMT"
+      {
+        "@type": "Offer",
+        "price": "150",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Swedish Massage",
+          "description": "Gentle technique to reduce swelling, detoxify, and boost immunity."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "245",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Eastside Executive Ritual",
+          "description": "Bespoke deep tissue + aromatherapy + hot stones for high-performers."
+        }
       }
-    }
-    </script>
-</head>
+    ]
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "502",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+
+  "founder": {
+    "@type": "Person",
+    "name": "Lead LMT"
+  }
+}
+</script>
 <body>
 
     <a href="https://wa.me/14254238888" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>

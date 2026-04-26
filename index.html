@@ -37,146 +37,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     
-    <!-- JSON-LD Structured Data: LocalBusiness + AggregateRating + Services -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Lazizi® Wellness",
+  "alternateName": "Lazizi Mobile Massage Therapy",
+  "url": "https://laziziwellness.com/",
+  "image": "https://laziziwellness.com/lazizi-favicon.webp",
+  "description": "Premium mobile massage and clinical recovery treatments in Seattle and Bellevue. WA licensed massage therapists specializing in deep tissue, medical massage, and executive wellness.",
+  "telephone": "+14254238888",
+  "email": "info@laziziwellness.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10606 NE 20th St",
+    "addressLocality": "Bellevue",
+    "addressRegion": "WA",
+    "postalCode": "98004",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.610378,
+    "longitude": -122.200676
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Seattle" },
+    { "@type": "City", "name": "Bellevue" },
+    { "@type": "City", "name": "Redmond" },
+    { "@type": "City", "name": "Kirkland" }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "paymentAccepted": "Credit Card, Debit Card, HSA/FSA",
+  "knowsLanguage": "English",
+  "license": "WA LMT #MA6098723",
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "187",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+
+  "review": [
     {
-      "@context": "https://schema.org",
-      "@type": "Massage",
-      "name": "Lazizi® Wellness",
-      "alternateName": "Lazizi Mobile Massage Therapy",
-      "image": "https://laziziwellness.com/lazizi-favicon.webp",
-      "description": "Premium mobile massage and clinical recovery treatments in Seattle and Bellevue. WA licensed massage therapists specializing in deep tissue, medical massage, and executive wellness.",
-      "url": "https://laziziwellness.com",
-      "telephone": "+14254238888",
-      "email": "info@laziziwellness.com",
-      "priceRange": "$$"
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Seattle"
-        },
-        {
-          "@type": "City",
-          "name": "Bellevue"
-        },
-        {
-          "@type": "City",
-          "name": "Redmond"
-        },
-        {
-          "@type": "City",
-          "name": "Kirkland"
-        }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bellevue",
-        "addressRegion": "WA",
-        "addressCountry": "US"
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Jordan D."
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 47.610378,
-        "longitude": -122.200676
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "08:00",
-          "closes": "20:00"
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "187",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": "Jordan D.",
-          "datePublished": "2025-02-10",
-          "reviewBody": "Best deep tissue in Seattle! As a Microsoft employee, my neck pain is finally gone.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": "Lisa S.",
-          "datePublished": "2025-01-22",
-          "reviewBody": "Mobile service to my Medina home was flawless. Luxury experience without dealing with Seattle traffic.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          }
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Massage Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Deep Tissue Recovery",
-              "description": "Targeted myofascial release for chronic tension & tech-neck.",
-              "price": "130",
-              "priceCurrency": "USD"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "The Eastside Executive",
-              "description": "90-min bespoke deep tissue + aromatherapy for high-pressure weeks.",
-              "price": "245",
-              "priceCurrency": "USD"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Mobile Outcall Massage",
-              "description": "Luxury mobile massage at your home or office. Table & linens provided.",
-              "price": "180",
-              "priceCurrency": "USD"
-            }
-          }
-        ]
-      },
-      "knowsLanguage": "English",
-      "license": "WA LMT #MA6098723"
-    }
-    </script>
-    
-    <!-- Additional structured data for local business (Google Maps + Local SEO) -->
-    <script type="application/ld+json">
+      "datePublished": "2025-02-10",
+      "reviewBody": "Best deep tissue in Seattle! As a Microsoft employee, my neck pain is finally gone.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Lazizi Wellness",
-      "image": "https://laziziwellness.com/images/studio.jpg",
-      "telephone": "+14254238888",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10606 NE 20th St",
-        "addressLocality": "Bellevue",
-        "addressRegion": "WA",
-        "postalCode": "98004",
-        "addressCountry": "US"
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Lisa S."
       },
-      "openingHours": "Mo-Su 08:00-20:00",
-      "paymentAccepted": "Credit Card, Debit Card, HSA/FSA"
+      "datePublished": "2025-01-22",
+      "reviewBody": "Mobile service to my Medina home was flawless. Luxury experience without dealing with Seattle traffic.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     }
-    </script>
+  ],
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Massage Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Deep Tissue Recovery",
+          "description": "Targeted myofascial release for chronic tension & tech-neck."
+        },
+        "price": "130",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "The Eastside Executive",
+          "description": "90-min bespoke deep tissue + aromatherapy for high-pressure weeks."
+        },
+        "price": "245",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile Outcall Massage",
+          "description": "Luxury mobile massage at your home or office. Table & linens provided."
+        },
+        "price": "180",
+        "priceCurrency": "USD"
+      }
+    ]
+  }
+}
+</script>
 </head>
 <body>
 
