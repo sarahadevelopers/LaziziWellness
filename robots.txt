@@ -1,0 +1,16 @@
+# robots.txt for laziziwellness.com
+User-agent: *
+Allow: /
+Sitemap: https://laziziwellness.com/sitemap.xml
+
+# Disallow template files (to avoid duplicate content)
+Disallow: /blog-post.html
+Disallow: /generate-blogs.js
+Disallow: /blog.js
+Disallow: /index.js
+Disallow: /services.js
+
+# Disallow any potential private or system files
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /image*.webp
