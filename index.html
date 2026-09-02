@@ -19,7 +19,7 @@
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Lazizi® Wellness | Premium Mobile Massage Seattle & Bellevue">
+    <meta property="og:title" content="Lazizi® Wellness | Premier Mobile Massage Seattle & Bellevue">
     <meta property="og:description" content="On-demand clinical massage & recovery. WA licensed therapists. Mobile outcall & in-studio. Book your executive wellness session today.">
     <meta property="og:url" content="https://laziziwellness.com/">
     <meta property="og:image" content="https://laziziwellness.com/lazizi-favicon.webp">
@@ -29,15 +29,16 @@
     <meta name="twitter:description" content="WA-licensed clinical massage therapists available for mobile outcall & studio sessions. Deep tissue, medical massage & executive rituals.">
     <meta name="twitter:image" content="https://laziziwellness.com/lazizi-favicon.webp">
     
-    <!-- Preconnect & Fonts (Performance + SEO) -->
+    <!-- Preconnect & Fonts -->
      <link rel="icon" type="image/png" href="lazizi-favicon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--  <link rel="stylesheet" href="/index.css?v=2"> -->
     
-  <script type="application/ld+json">
+    <!-- Schema -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
@@ -46,7 +47,7 @@
   "url": "https://laziziwellness.com/",
   "image": "https://laziziwellness.com/lazizi-favicon.webp",
   "description": "Premium mobile massage and clinical recovery treatments in Seattle and Bellevue. WA licensed massage therapists specializing in deep tissue, medical massage, and executive wellness.",
-  "telephone": "+14254238888",
+  "telephone": "+14257777512",
   "email": "info@laziziwellness.com",
   "priceRange": "$$",
   "address": {
@@ -155,11 +156,1198 @@
   }
 }
 </script>
+
+    <!-- Additional CSS for new sections (if not in index.css) -->
+    <style>
+             * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #fff9f2;
+            --beige: #f5efe8;
+            --soft-beige: #f0e8de;
+            --white: #ffffff;
+            --gold: #c6a47e;
+            --gold-light: #dac29c;
+            --dark-gold: #a88664;
+            --text-dark: #3e3a36;
+            --text-light: #6b625a;
+            --shadow: 0 20px 35px -8px rgba(0,0,0,0.07), 0 5px 15px rgba(0,0,0,0.03);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-padding-top: 90px;
+            scroll-behavior: smooth;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.03);
+            z-index: 1000;
+            padding: 0.8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgba(198, 164, 126, 0.2);
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled { padding: 0.5rem 2rem; background: rgba(255, 255, 255, 0.95); }
+        .navbar.hide { transform: translateY(-100%); }
+        .nav-inner { max-width: 1300px; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 8px; font-size: 1.6rem; font-weight: 500; letter-spacing: 0.5px; color: var(--dark-gold); }
+        .logo img { height: 45px; width: auto; object-fit: contain; transition: height 0.3s ease; }
+        .navbar.scrolled .logo img { height: 38px; }
+        .logo span { font-weight: 300; color: var(--text-light); font-size: 0.9rem; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; font-weight: 400; color: var(--text-dark); font-size: 1.1rem; transition: var(--transition); position: relative; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0%; height: 2px; background: var(--gold); transition: 0.3s; }
+        .nav-links a:hover::after { width: 100%; }
+        .book-btn { background: var(--gold); color: white !important; padding: 0.6rem 1.8rem; border-radius: 40px; font-weight: 500; box-shadow: 0 8px 18px rgba(198, 164, 126, 0.25); transition: var(--transition); }
+        .book-btn:hover { background: var(--dark-gold); transform: translateY(-3px); }
+        .book-btn::after { display: none; }
+        .menu-toggle { display: none; font-size: 2rem; color: var(--gold); cursor: pointer; }
+
+        /* hero */
+        .hero { position: relative; height: 90vh; min-height: 700px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; overflow: hidden; }
+        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+        .hero::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.3) 100%); z-index: -1; }
+        .hero-overlay { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+        .hero-content { max-width: 900px; display: flex; flex-direction: column; align-items: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 400; letter-spacing: -0.5px; }
+        .hero-tagline { font-size: 1.3rem; font-weight: 300; max-width: 650px; margin: 1.2rem 0 2rem; opacity: .95; }
+        .hero-btns { display: flex; gap: 1.4rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .hero-trust { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; font-size: .95rem; }
+        .hero-trust span { display: flex; align-items: center; gap: .5rem; }
+        .hero-trust i { color: var(--gold); }
+        .btn { padding: 0.9rem 2.8rem; border-radius: 50px; font-weight: 500; font-size: 1.1rem; letter-spacing: 0.5px; border: 2px solid white; color: white; cursor: pointer; transition: var(--transition); text-decoration: none; display: inline-block; }
+        .btn-primary { background: var(--gold); border-color: var(--gold); color: white; }
+        .btn-primary:hover { background: var(--dark-gold); border-color: var(--dark-gold); transform: scale(1.03); box-shadow: 0 15px 30px rgba(198,164,126,0.4); }
+        .btn-outline:hover { background: white; color: var(--text-dark); border-color: white; }
+
+        .section { padding: 5rem 2rem; max-width: 1400px; margin: 0 auto; position: relative; }
+        .section-title { font-size: 2.8rem; font-weight: 350; color: var(--dark-gold); text-align: center; margin-bottom: 1rem; letter-spacing: 1px; }
+        .section-sub { text-align: center; color: var(--text-light); max-width: 700px; margin: 0 auto 3rem; font-size: 1.2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .service-card { position: relative; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow); height: 320px; text-decoration: none; color: white; display: block; transition: var(--transition); border: 2px solid transparent; }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--gold); }
+        .service-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .service-card:hover img { transform: scale(1.05); }
+        .service-card .overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 2rem 1.5rem 1.5rem; text-align: left; }
+        .service-card .overlay h3 { font-size: 1.8rem; font-weight: 450; margin-bottom: 0.3rem; }
+        .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .featured-card { background: var(--white); border-radius: 30px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); border: 1px solid rgba(198,164,126,0.1); }
+        .featured-card:hover { transform: translateY(-8px); border-color: var(--gold); }
+        .featured-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem; padding: 1.5rem 1.5rem 0 1.5rem; }
+        .featured-header h3 { font-size: 1.6rem; font-weight: 500; color: var(--text-dark); }
+        .featured-price { font-size: 1.5rem; font-weight: 600; color: var(--gold); }
+        .featured-content { padding: 0 1.5rem 1.8rem 1.5rem; }
+        .featured-content p { color: var(--text-light); margin-bottom: 1rem; }
+        .mobile-perks { list-style: none; margin: 1rem 0; }
+        .mobile-perks li { margin: 0.5rem 0; display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; }
+        .featured-btn { background: transparent; border: 2px solid var(--gold); color: var(--gold); padding: 0.6rem 1.5rem; border-radius: 50px; font-weight: 500; text-decoration: none; display: inline-block; transition: var(--transition); cursor: pointer; text-align: center; width: 100%; }
+        .featured-btn:hover { background: var(--gold); color: white; }
+        .trust-strip { background: var(--white); border-radius: 80px; padding: 1.5rem 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; margin: 3rem 0; border: 1px solid var(--gold-light); }
+        .trust-item { display: flex; align-items: center; gap: 0.8rem; font-size: 1rem; }
+
+        /* booking modal & form */
+        .booking-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 2000; align-items: center; justify-content: center; backdrop-filter: blur(5px); }
+        .modal-content { background: var(--white); max-width: 550px; width: 90%; border-radius: 40px; padding: 2rem; max-height: 85vh; overflow-y: auto; position: relative; }
+        .close-modal { position: absolute; top: 1rem; right: 1.5rem; font-size: 2rem; cursor: pointer; color: var(--text-light); }
+        .booking-form .form-group { margin-bottom: 1.2rem; }
+        .booking-form input, .booking-form select, .booking-form textarea { width: 100%; padding: 0.9rem 1rem; border: 1px solid #e0d6cc; border-radius: 60px; font-family: 'Jost', sans-serif; background: var(--cream); }
+        .policy-check { margin: 1.2rem 0; display: flex; gap: 0.7rem; align-items: center; }
+        .policy-check label { font-size: 0.85rem; color: var(--text-light); }
+        .policy-check input { width: 18px; height: 18px; }
+        .submit-payment-btn { background: var(--gold); color: white; border: none; width: 100%; padding: 1rem; border-radius: 60px; font-weight: 600; font-size: 1.1rem; cursor: pointer; transition: var(--transition); }
+        .submit-payment-btn:hover { background: var(--dark-gold); }
+        .location-focus { background: var(--soft-beige); border-radius: 60px; padding: 2rem; text-align: center; margin: 2rem 0; }
+        
+        .footer { background: var(--beige); padding: 4rem 2rem 2rem; margin-top: 3rem; border-top: 1px solid rgba(198,164,126,0.2); }
+        .footer-grid { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 3rem; }
+        .social-icons a { color: var(--gold); font-size: 1.8rem; margin-right: 1rem; transition: var(--transition); }
+        .copyright { text-align: center; margin-top: 2rem; color: var(--text-light); font-size: 0.9rem; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 10px 25px rgba(37,211,102,0.3); z-index: 999; transition: var(--transition); text-decoration: none; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); } 70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
+        .fade-section { opacity: 0; transform: translateY(25px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-section.visible { opacity: 1; transform: translateY(0); }
+        @media (max-width: 900px) {
+            .nav-links { display: none; flex-direction: column; background: rgba(255,255,255,0.95); position: absolute; top: 70px; left: 0; right: 0; padding: 2rem; }
+            .nav-links.show { display: flex; }
+            .menu-toggle { display: block; }
+            .hero h1 { font-size: 2.5rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .r-sup { font-size: 0.7rem; vertical-align: super; }
+        .wa-license { font-size: 0.8rem; background: var(--soft-beige); display: inline-block; padding: 0.2rem 1rem; border-radius: 40px; margin-top: 1rem; }
+    /* Enhanced Form Styling */
+.booking-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 0;
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.booking-form label i {
+    color: var(--gold);
+    width: 20px;
+    margin-right: 6px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1.5px solid #e8dfd6;
+    border-radius: 16px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    background: var(--cream);
+    transition: var(--transition);
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(198, 164, 126, 0.15);
+}
+
+.booking-form textarea {
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.policy-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.policy-check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: var(--gold);
+    flex-shrink: 0;
+}
+
+.policy-check label {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-light);
+}
+
+.booking-summary {
+    background: linear-gradient(135deg, var(--soft-beige), var(--beige));
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--gold-light);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.summary-row:first-child {
+    border-bottom: 1px dashed var(--gold-light);
+    margin-bottom: 0.3rem;
+}
+
+.summary-row strong {
+    color: var(--dark-gold);
+    font-size: 1.1rem;
+}
+
+.submit-payment-btn {
+    background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.submit-payment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(198, 164, 126, 0.4);
+}
+
+.secure-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.secure-note i {
+    color: var(--gold);
+    margin-right: 0.3rem;
+}
+
+@media (max-width: 650px) {
+    .booking-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* ========== PREMIUM TESTIMONIALS SECTION ========== */
+.testimonial-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(198, 164, 126, 0.12);
+    text-align: center;
+}
+
+.review-stars {
+    color: #f5b301;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: fade 0.4s ease;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.testimonial-slide p {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--text-dark);
+    margin-bottom: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+}
+
+.client-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.review-source {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--soft-beige);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dot.active {
+    background: var(--gold);
+    width: 24px;
+    border-radius: 20px;
+}
+
+/* ========== PREMIUM CONTACT SECTION ========== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.contact-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(198, 164, 126, 0.12);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item i {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--soft-beige);
+    border-radius: 50%;
+    color: var(--gold);
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.info-item:hover i {
+    background: var(--gold);
+    color: white;
+    transform: scale(1.02);
+}
+
+.info-item a {
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.info-item a:hover {
+    color: var(--gold);
+}
+
+.map-container {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    min-height: 280px;
+    border: 1px solid rgba(198, 164, 126, 0.12);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonial-container {
+        padding: 1.8rem;
+    }
+    
+    .testimonial-slide p {
+        font-size: 1rem;
+    }
+    
+    .info-item {
+        margin-bottom: 1.2rem;
+    }
+     .hero { position: relative; height: 90vh; min-height: 700px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; overflow: hidden; }
+        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+        .hero::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.3) 100%); z-index: -1; }
+        .hero-overlay { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+        .hero-content { max-width: 900px; display: flex; flex-direction: column; align-items: center; }
+        .hero h1 { font-size: 1.5rem; font-weight: 400; letter-spacing: -0.5px; }
+        .hero-tagline { font-size: 1.3rem; font-weight: 300; max-width: 650px; margin: 1.2rem 0 2rem; opacity: .95; }
+        .hero-btns { display: flex; gap: 1.4rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .hero-trust { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; font-size: .95rem; }
+        .hero-trust span { display: flex; align-items: center; gap: .5rem; }
+        .hero-trust i { color: var(--gold); }
+        .btn { padding: 0.9rem 2.8rem; border-radius: 50px; font-weight: 500; font-size: 1.1rem; letter-spacing: 0.5px; border: 2px solid white; color: white; cursor: pointer; transition: var(--transition); text-decoration: none; display: inline-block; }
+        .btn-primary { background: var(--gold); border-color: var(--gold); color: white; }
+        .btn-primary:hover { background: var(--dark-gold); border-color: var(--dark-gold); transform: scale(1.03); box-shadow: 0 15px 30px rgba(198,164,126,0.4); }
+        .btn-outline:hover { background: white; color: var(--text-dark); border-color: white; }
+    
+}
+
+/* ========== PREMIUM FOOTER STYLES ========== */
+.footer {
+    background: var(--beige);
+    border-top: 1px solid rgba(198, 164, 126, 0.2);
+    margin-top: 4rem;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 2rem 1.5rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 1.5fr;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Brand Column */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.footer-logo span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-gold);
+    letter-spacing: -0.3px;
+}
+
+.footer-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 280px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 50%;
+    color: var(--gold);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.social-icons a:hover {
+    background: var(--gold);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(198, 164, 126, 0.25);
+}
+
+/* Footer Sections */
+.footer-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.2px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a::before {
+    content: '→';
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.2s ease;
+    color: var(--gold);
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+    transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Service Areas */
+.service-areas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.area-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.area-group strong {
+    color: var(--text-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.area-group span {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.policy-note {
+    background: rgba(198, 164, 126, 0.08);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    border-left: 3px solid var(--gold);
+}
+
+.policy-note i {
+    color: var(--gold);
+    width: 20px;
+    margin-right: 6px;
+    font-size: 0.7rem;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid rgba(198, 164, 126, 0.2);
+}
+
+.copyright {
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--gold);
+}
+
+.separator {
+    color: rgba(107, 98, 90, 0.3);
+    font-size: 0.7rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .footer-container {
+        padding: 2rem 1.5rem 1.2rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-brand {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-description {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0;
+    }
+    
+    .footer-links a::before {
+        display: none;
+    }
+    
+    .service-areas {
+        text-align: center;
+    }
+    
+    .area-group {
+        align-items: center;
+    }
+    
+    .policy-note {
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 1.8rem 1rem 1rem;
+    }
+    
+    .footer-logo span {
+        font-size: 1.2rem;
+    }
+    
+    .footer-logo img {
+        height: 34px;
+    }
+    
+    .social-icons a {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+    
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+    
+    .footer-legal {
+        gap: 0.5rem;
+    }
+    
+    .separator {
+        display: none;
+    }
+    
+    .footer-legal a {
+        padding: 0 0.5rem;
+        border-right: 1px solid rgba(107, 98, 90, 0.2);
+    }
+    
+    .footer-legal a:last-child {
+        border-right: none;
+    }
+
+}
+/* 1. Larger touch targets for buttons on mobile */
+@media (max-width: 768px) {
+  .btn, .book-btn, .featured-btn, .submit-payment-btn {
+    padding: 0.9rem 2rem;  /* bigger tap area */
+    font-size: 1rem;
+    min-height: 54px;      /* iOS accessibility guideline */
+  }
+  
+  /* 2. Softer card shadows and smoother transitions */
+  .service-card, .featured-card, .testimonial-container {
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+  }
+  
+  /* 3. Better spacing in the hero section */
+  .hero h1 { font-size: 2rem; } /* already 1.5rem? adjust to 2rem for impact */
+  .hero-tagline { font-size: 1rem; }
+  .hero-btns { gap: 0.8rem; }
+  
+  /* 4. Map container – ensure it fills width nicely */
+  .map-container {
+    min-height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    display: block;
+  }
+}
+/* ========== SIGNATURE RECOVERY SESSIONS - 2/3 IMAGE LAYOUT ========== */
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.featured-card {
+    background: var(--white);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(198, 164, 126, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 520px; /* Fixed height ensures consistent 2/3 split */
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.15);
+    border-color: var(--gold);
+}
+
+/* ----- Image: occupies 2/3 of card height ----- */
+.featured-image {
+    flex: 2; /* Takes 2/3 of card height */
+    overflow: hidden;
+    position: relative;
+    background: var(--soft-beige);
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.featured-card:hover .featured-image img {
+    transform: scale(1.05);
+}
+
+/* ----- Content: occupies 1/3 of card height ----- */
+.featured-body {
+    flex: 1; /* Takes 1/3 of card height */
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.5rem 1.5rem;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.featured-header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.featured-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+    background: var(--cream);
+    padding: 0.15rem 0.8rem;
+    border-radius: 40px;
+    white-space: nowrap;
+}
+
+.featured-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-content p {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+}
+
+.mobile-perks {
+    list-style: none;
+    margin: 0.2rem 0 0.5rem;
+    padding: 0;
+}
+
+.mobile-perks li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+    margin: 0.1rem 0;
+}
+
+.mobile-perks i {
+    color: var(--gold);
+    width: 1rem;
+    font-size: 0.8rem;
+}
+
+.featured-btn {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 0.5rem 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    text-align: center;
+    transition: var(--transition);
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+    letter-spacing: 0.3px;
+}
+
+.featured-btn:hover {
+    background: var(--gold);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(198, 164, 126, 0.3);
+}
+
+/* ----- Mobile service badge ----- */
+.mobile-service .featured-badge {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    background: #25D366;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 40px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    z-index: 2;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1024px) {
+    .featured-card {
+        height: 480px;
+    }
+
+    .featured-header h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .featured-card {
+        height: 440px;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .featured-body {
+        padding: 1rem 1.2rem 1.2rem;
+    }
+
+    .featured-header h4 {
+        font-size: 1rem;
+    }
+
+    .featured-price {
+        font-size: 0.95rem;
+        padding: 0.1rem 0.6rem;
+    }
+
+    .featured-content p {
+        font-size: 0.8rem;
+    }
+
+    .featured-btn {
+        font-size: 0.8rem;
+        padding: 0.45rem 0;
+    }
+
+    .mobile-perks li {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-card {
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .featured-body {
+        padding: 0.8rem 1rem 1rem;
+    }
+
+    .featured-header h4 {
+        font-size: 0.95rem;
+    }
+
+    .featured-price {
+        font-size: 0.85rem;
+    }
+
+    .featured-content p {
+        font-size: 0.75rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .featured-btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0;
+    }
+}
+
+        /* Hero Features */
+        .hero-features {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 1.2rem 0 2rem;
+            flex-wrap: wrap;
+        }
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+            font-size: 0.85rem;
+            color: white;
+        }
+        .hero-feature i {
+            color: var(--gold, #c6a47e);
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .hero-features { flex-direction: column; align-items: center; gap: 0.8rem; }
+            .hero-feature { width: 100%; justify-content: center; }
+        }
+
+        /* Why Choose Us */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .why-item {
+            background: white;
+            padding: 1.8rem 1.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            border: 1px solid rgba(198,164,126,0.1);
+            transition: var(--transition);
+        }
+        .why-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        .why-item i {
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .why-item h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--dark-gold);
+            margin-bottom: 0.5rem;
+        }
+        .why-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Internal linking section */
+        .service-links {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .service-links a {
+            color: var(--gold);
+            text-decoration: none;
+            margin: 0 0.8rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .service-links a:hover {
+            color: var(--dark-gold);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-<!-- WhatsApp Floating Button (enhanced accessibility) -->
-<a href="https://wa.me/14254238888" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/14257777512" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -175,22 +1363,26 @@
             <li><a href="#about">About</a></li>
             <li><a href="blog.html">Wellness Journal</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/" id="openBookingBtn" class="book-btn" aria-label="Book appointment"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+            <li><a href="#bookingModal" id="openBookingBtn" class="book-btn" aria-label="Book appointment"><i class="fas fa-calendar-check"></i> Book Now</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Hero Section with semantic H1 -->
+<!-- Hero Section with fixed Book Now and new features -->
 <section id="home" class="hero fade-section">
     <video autoplay muted loop playsinline class="hero-video" aria-label="Background relaxation video">
-        <source src="https://assets.mixkit.co/videos/4744/4744-720.mp4" type="video/mp4">
+        <source src="https://assets.mixkit.co/videos/4744/4744-720.mp3" type="video/mp4">
     </video>
     <div class="hero-overlay">
         <div class="hero-content">
-            <h1>Lazizi<sup class="r-sup">®</sup> Wellness | Premium Mobile Massage <span class="hero-accent"></span></h1>
+            <h1>Lazizi<sup class="r-sup">®</sup> Wellness | Premier Mobile Massage <span class="hero-accent"></span></h1>
             <!--  <p class="hero-tagline">Precision recovery & executive wellness treatments. WA-licensed therapists at your door.</p>-->
+            
+            <!-- Hero Features (NEW) -->
+          
+            
             <div class="hero-btns">
-                <a href="/" id="heroBookBtn" class="btn btn-primary">Book Your Session →</a>
+                <a href="#bookingModal" id="heroBookBtn" class="btn btn-primary">Book Your Session →</a>
                 <a href="services.html" class="btn btn-outline">Clinical Treatments</a>
             </div>
             <div class="hero-trust">
@@ -202,23 +1394,23 @@
     </div>
 </section>
 
-<!-- Services Section with optimized heading structure -->
+<!-- Services Section with improved internal links -->
 <section id="services" class="section fade-section">
     <h2 class="section-title">Our Clinical Recovery Services</h2>
     <div class="section-sub">Evidence-based deep tissue, medical massage & mobile wellness for Seattle's active lifestyle & Bellevue's executives.</div>
     
     <div class="services-grid">
-        <a href="#" class="service-card" onclick="openBookingWithService('Deep Tissue Recovery'); return false;" aria-label="Book Deep Tissue Recovery">
-            <img src="image - 2026-03-12T143909.047.webp" alt="Deep tissue massage therapy session for chronic pain relief" loading="lazy">
-            <div class="overlay"><h3>Deep Tissue Recovery</h3><p>Tech-neck relief, Chronic pain</p><span class="explore">Book →</span></div>
+        <a href="services/deep-tissue-massage-seattle.html" class="service-card" aria-label="Deep Tissue Massage">
+            <img src="lazizi-favicon.webp" alt="Deep tissue massage therapy session for chronic pain relief" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
+            <div class="overlay"><h3>Deep Tissue Recovery</h3><p>Tech-neck relief, Chronic pain</p><span class="explore">Learn More →</span></div>
         </a>
-        <a href="#" class="service-card" onclick="openBookingWithService('Swedish Massage'); return false;" aria-label="Book Swedish Massage">
-            <img src="image - 2026-03-12T153341.677.webp" alt="Swedish massage for deep relaxation and stress relief" loading="lazy">
-            <div class="overlay"><h3>Swedish Massage</h3><p>Intimate, relaxing & rejuvenating</p><span class="explore">Book →</span></div>
+        <a href="services/swedish-massage-seattle.html" class="service-card" aria-label="Swedish Massage">
+            <img src="lazizi-favicon.webp" alt="Swedish massage for deep relaxation and stress relief" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
+            <div class="overlay"><h3>Swedish Massage</h3><p>Intimate, relaxing & rejuvenating</p><span class="explore">Learn More →</span></div>
         </a>
-        <a href="#" class="service-card" onclick="openBookingWithService('Medical Massage'); return false;" aria-label="Book Medical Massage">
-            <img src="image - 2026-03-12T142732.961.webp" alt="Medical massage therapy for injury rehabilitation and detox" loading="lazy">
-            <div class="overlay"><h3>Medical Massage</h3><p>Relief, Detox & wellness</p><span class="explore">Book →</span></div>
+        <a href="services/medical-massage-seattle.html" class="service-card" aria-label="Medical Massage">
+            <img src="lazizi-favicon.webp" alt="Medical massage therapy for injury rehabilitation and detox" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
+            <div class="overlay"><h3>Medical Massage</h3><p>Relief, Detox & wellness</p><span class="explore">Learn More →</span></div>
         </a>
     </div>
     
@@ -229,22 +1421,75 @@
         <div class="trust-item"><i class="fas fa-shield-alt"></i> HSA/FSA Eligible</div>
     </div>
     
-    <h3 class="signature-heading">Signature Recovery Sessions</h3>
-    <div class="featured-grid">
-        <div class="featured-card">
-            <div class="featured-header"><h4>Deep Tissue Recovery</h4><span class="featured-price">$130</span></div>
-            <div class="featured-content"><p>Targeted myofascial release for chronic tension & "tech-neck". Ideal for desk workers.</p><button class="featured-btn" onclick="openBookingWithService('Deep Tissue Recovery')" aria-label="Book Deep Tissue Recovery">Book Now</button></div>
+   <h3 class="signature-heading">Signature Recovery Sessions</h3>
+<div class="featured-grid">
+    <!-- Card 1: Deep Tissue Recovery -->
+    <div class="featured-card">
+        <div class="featured-image">
+            <img src="lazizi-favicon.webp" alt="Deep tissue massage therapy for chronic pain and tech-neck relief" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
         </div>
-        <div class="featured-card">
-            <div class="featured-header"><h4>The Eastside Executive</h4><span class="featured-price">$245</span></div>
-            <div class="featured-content"><p>90-min bespoke deep tissue + aromatherapy. Designed for high-pressure weeks in Bellevue.</p><button class="featured-btn" onclick="openBookingWithService('Eastside Executive Ritual')" aria-label="Book Executive Ritual">Book Now</button></div>
+        <div class="featured-body">
+            <div class="featured-header">
+                <h4>Deep Tissue Recovery</h4>
+                <span class="featured-price">$130</span>
+            </div>
+            <div class="featured-content">
+                <p>Targeted myofascial release for chronic tension &amp; "tech-neck". Ideal for desk workers.</p>
+                <button class="featured-btn" onclick="openBookingWithService('Deep Tissue Recovery')">Book Now →</button>
+            </div>
         </div>
-        <div class="featured-card mobile-service">
-            <div class="featured-header"><h4>Elite Mobile Wellness</h4><span class="featured-price">From $180</span></div>
-            <div class="featured-content"><p>Serving Queen Anne, Medina, Clyde Hill. We bring the table & luxury linens.</p>
-            <ul class="mobile-perks"><li><i class="fas fa-car"></i> 15-mile radius included</li><li><i class="fas fa-shield-alt"></i> Background-checked LMT</li></ul>
-            <button class="featured-btn" onclick="openBookingWithService('Mobile Outcall Massage')" aria-label="Schedule Mobile Massage">Book Mobile Session</button></div>
+    </div>
+
+    <!-- Card 2: The Eastside Executive -->
+    <div class="featured-card">
+        <div class="featured-image">
+            <img src="lazizi-favicon.webp" alt="Executive aromatherapy massage in Bellevue for high-pressure professionals" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
         </div>
+        <div class="featured-body">
+            <div class="featured-header">
+                <h4>The Eastside Executive</h4>
+                <span class="featured-price">$245</span>
+            </div>
+            <div class="featured-content">
+                <p>90-min bespoke deep tissue + aromatherapy. Designed for high-pressure weeks in Bellevue.</p>
+                <button class="featured-btn" onclick="openBookingWithService('Eastside Executive Ritual')">Book Now →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3: Elite Mobile Wellness -->
+    <div class="featured-card mobile-service">
+        <div class="featured-image">
+            <img src="lazizi-favicon.webp" alt="Mobile massage in Seattle - luxury wellness at your home or office" loading="lazy" onerror="this.src='https://placehold.co/600x400'">
+        </div>
+        <div class="featured-body">
+            <div class="featured-header">
+                <h4>Elite Mobile Wellness</h4>
+                <span class="featured-price">From $180</span>
+            </div>
+            <div class="featured-content">
+                <p>Serving Queen Anne, Medina, Clyde Hill. We bring the table &amp; luxury linens.</p>
+                <!--  <ul class="mobile-perks">
+                    <li><i class="fas fa-car"></i> 15-mile radius included</li>
+                    <li><i class="fas fa-shield-alt"></i> Background-checked LMT</li>
+                </ul>-->
+                <button class="featured-btn" onclick="openBookingWithService('Mobile Outcall Massage')">Book Mobile Session →</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Internal Links to all service pages -->
+    <div class="service-links">
+        <p>Explore all our services:
+            <a href="services/deep-tissue-massage-seattle.html">Deep Tissue</a> |
+            <a href="services/swedish-massage-seattle.html">Swedish</a> |
+            <a href="services/sports-massage-seattle.html">Sports Massage</a> |
+            <a href="services/prenatal-massage-bellevue.html">Prenatal</a> |
+            <a href="services/medical-massage-seattle.html">Medical</a> |
+            <a href="services/lymphatic-massage-bellevue.html">Lymphatic Drainage</a> |
+            <a href="services/couples-massage-seattle.html">Couples</a> |
+            <a href="services/mobile-massage-seattle.html">Mobile</a>
+        </p>
     </div>
     
     <div class="location-focus">
@@ -254,11 +1499,39 @@
     </div>
 </section>
 
-<!-- About Section: Lead Practitioner -->
+<!-- Why Choose Us Section (NEW) -->
+<section class="section fade-section why-choose">
+    <h2 class="section-title">Why Choose Lazizi® Wellness?</h2>
+    <div class="section-sub">Experience the difference of clinical expertise, luxury convenience, and personalized care.</div>
+    <div class="why-grid">
+        <div class="why-item">
+            <i class="fas fa-certificate"></i>
+            <h3>WA Licensed LMTs</h3>
+            <p>9+ years clinical experience, board certified (NCBTMB). We specialize in evidence-based therapeutic massage.</p>
+        </div>
+        <div class="why-item">
+            <i class="fas fa-home"></i>
+            <h3>Mobile Convenience</h3>
+            <p>We come to your home, office, or hotel in Seattle, Bellevue, Redmond, and Kirkland. No traffic, no parking hassles.</p>
+        </div>
+        <div class="why-item">
+            <i class="fas fa-clock"></i>
+            <h3>Flexible Scheduling</h3>
+            <p>Evening and weekend appointments available. Book online with a $50 deposit and get instant confirmation.</p>
+        </div>
+        <div class="why-item">
+            <i class="fas fa-credit-card"></i>
+            <h3>HSA/FSA Accepted</h3>
+            <p>Medical massage is eligible with a doctor's referral. We provide superbills for insurance reimbursement.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
 <section id="about" class="section fade-section">
     <div class="about-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
         <div style="border-radius:30px; overflow:hidden;">
-            <img src="image - 2026-03-12T142147.961.webp" style="width:100%; height:auto; object-fit:cover;" alt="Lead massage therapist, WA licensed LMT practitioner at Lazizi Wellness" loading="lazy">
+            <img src="lazizi-favicon.webp" style="width:100%; height:auto; object-fit:cover;" alt="Lead massage therapist, WA licensed LMT practitioner at Lazizi Wellness" loading="lazy" onerror="this.src='https://placehold.co/600x600'">
         </div>
         <div>
             <h2 class="section-title" style="text-align:left;">Meet Your Lead Practitioner</h2>
@@ -273,12 +1546,11 @@
     </div>
 </section>
 
-<!-- Booking Modal: Fixed action for form submission + SEO accessible structure -->
+<!-- Booking Modal -->
 <div id="bookingModal" class="booking-modal" role="dialog" aria-label="Booking form modal">
     <div class="modal-content">
         <span class="close-modal" id="closeModalBtn" aria-label="Close booking form">&times;</span>
         <h3 style="margin-bottom:1rem;">Secure your session – $50 deposit</h3>
-        <!-- Form action corrected for FormSubmit functionality (improves UX & conversion signals) -->
         <form id="dynamicBookingForm" class="booking-form" method="POST" action="https://formsubmit.co/info@laziziwellness.com">
             <input type="hidden" name="_subject" value="🆕 New Booking Request - Lazizi® Wellness">
             <input type="hidden" name="_template" value="table">
@@ -376,7 +1648,7 @@
     </div>
 </div>
 
-<!-- Testimonials with schema-ready content -->
+<!-- Testimonials -->
 <section id="testimonials" class="section fade-section">
     <div class="testimonial-container">
         <div class="review-stars" aria-label="Rated 4.9 out of 5 stars">
@@ -402,25 +1674,24 @@
     </div>
 </section>
 
-<!-- Contact Section with Local SEO signals -->
+<!-- Contact Section with Updated Map -->
 <section id="contact" class="section fade-section">
     <h2 class="section-title">Get in Touch</h2>
     <div class="section-sub">Serving Seattle & Bellevue with premium mobile and in-studio services • WA LMT #MA6098723</div>
     <div class="contact-grid">
         <div class="contact-info">
             <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Serving Seattle & Bellevue (mobile outcall to Queen Anne, Medina, Clyde Hill)</span></div>
-            <div class="info-item"><i class="fas fa-phone-alt"></i><a href="tel:+14254238888" aria-label="Call Lazizi Wellness">+1 (425) 423-8888</a></div>
+            <div class="info-item"><i class="fas fa-phone-alt"></i><a href="tel:+14257777512" aria-label="Call Lazizi Wellness">+1 (425) 777-7512</a></div>
             <div class="info-item"><i class="fas fa-envelope"></i><a href="mailto:info@laziziwellness.com" aria-label="Email Lazizi Wellness">info@laziziwellness.com</a></div>
             <div class="info-item"><i class="fas fa-clock"></i><span>Daily 8am – 8pm | 24/7 online booking</span></div>
             <div class="info-item"><i class="fas fa-shield-alt"></i><span>WA Licensed LMT #MA6098723 | Board Certified</span></div>
         </div>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21530.67945033032!2d-122.27568001524798!3d47.61429841768853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac2c0574301%3A0x2b8e8c8b9d9e4f5a!2sBellevue%2C%20WA!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="Google Map of Lazizi Wellness service area - Bellevue & Seattle"></iframe>
-        </div>
-    </div>
+            <!-- Updated to show Bellevue, WA (Downtown) -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d336.23049546618773!2d-122.20012092560265!3d47.609723665582756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c8907a2fb73%3A0x9251c19dfc539f75!2sLeone%20%26%20Vaughn%20Orthodontics!5e0!3m2!1sen!2ske!4v1784823500713!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 </section>
 
-<!-- Footer with copyright and structured internal links -->
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-grid">
@@ -460,6 +1731,6 @@
     </div>
 </footer>
 
-<script src="index.js"></script>
+<script src="/index.js"></script>
 </body>
 </html>

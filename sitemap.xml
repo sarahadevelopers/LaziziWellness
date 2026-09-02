@@ -7,199 +7,370 @@
     <!-- ==================== MAIN PAGES ==================== -->
     <url>
         <loc>https://laziziwellness.com/</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/services.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/blog-post.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ==================== SERVICE PAGES ==================== -->
+    <url>
+        <loc>https://laziziwellness.com/services/couples-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/deep-tissue-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/lymphatic-massage-bellevue.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/massage-therapist-bellevue.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/massage-therapist-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/medical-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/mobile-massage-bellevue.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/mobile-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/prenatal-massage-bellevue.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/sports-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/sports-recovery-massage-bellevue.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/services/swedish-massage-seattle.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ==================== CONDITION PAGES ==================== -->
+    <url>
+        <loc>https://laziziwellness.com/conditions/plantar-fasciitis.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/conditions/pregnancy-back-pain.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/conditions/rotator-cuff.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/conditions/sciatica.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/conditions/tech-neck.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/conditions/tmj.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ==================== LOCATION PAGES ==================== -->
+    <url>
+        <loc>https://laziziwellness.com/locations/bellevue-massage.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/locations/capitol-hill-massage.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/locations/kirkland-massage.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/locations/queen-anne-massage.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://laziziwellness.com/locations/redmond-massage.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- ==================== BLOG POSTS ==================== -->
     <url>
         <loc>https://laziziwellness.com/blog/burke-gilman-cyclist-massage-seattle.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/capitol-hill-wellness-massage-seattle.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/cold-plunge-deep-tissue-massage.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/cortisol-management-seattle-massage.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/cycle-syncing-massage-women.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/ergonomic-burnout-bellevue-massage.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/executive-system-reboot-bellevue-massage.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/fourth-trimester-massage-bellevue.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/lymphatic-drainage-bellevue-massage.html</loc>
-        <lastmod>2026-04-24</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/mercer-island-mobile-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/mitochondrial-health-massage-longevity.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/mobile-massage-medina-98039.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/mount-si-recovery-hike-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/pickleball-elbow-bellevue-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/plantar-fasciitis-massage-seattle.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/prenatal-massage-bellevue.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/remote-tech-massage-bellevue.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/rotator-cuff-massage-seattle.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/sciatica-massage-bellevue.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/seattle-marathon-recovery-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/ski-season-prep-acl-prevention-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/sleep-rem-massage-seattle.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/tech-neck-reset-seattle-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/tmj-massage-seattle.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://laziziwellness.com/blog/vagus-nerve-stress-seattle-massage.html</loc>
-        <lastmod>2026-04-25</lastmod>
+        <lastmod>2026-07-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
 
 </urlset>
