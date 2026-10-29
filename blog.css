@@ -453,3 +453,213 @@
         padding: 0.4rem 1rem;
     }
 }
+
+/* ==========================================================
+   LAZIZI WELLNESS — PREMIUM BLOG CARD UPGRADE
+   Append-only visual enhancement; preserves existing selectors.
+   ========================================================== */
+
+.blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.75rem;
+}
+
+.blog-card {
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    border: 1px solid rgba(96, 79, 59, 0.10);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 5px 22px rgba(48, 39, 29, 0.045);
+    transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+}
+
+/* Support existing image wrappers and direct card images. */
+.blog-image,
+.blog-card-image {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
+    background: #eee8df;
+}
+
+.blog-image img,
+.blog-card-image img,
+.blog-card > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    transition: transform 550ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.blog-card > img {
+    flex: 0 0 auto;
+}
+
+.blog-category,
+.blog-card-category {
+    display: inline-flex;
+    align-self: flex-start;
+    width: fit-content;
+    margin: 1.2rem 1.35rem 0;
+    padding: 0.35rem 0.65rem;
+    border-radius: 4px;
+    background: #f1f2eb;
+    color: #64745a;
+    font-size: 0.67rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+}
+
+.blog-title,
+.blog-card h2,
+.blog-card h3 {
+    padding: 0;
+    margin: 0.7rem 1.35rem 0;
+    color: #302f2a;
+    font-size: clamp(1.12rem, 1.3vw, 1.32rem);
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: -0.025em;
+    text-wrap: pretty;
+}
+
+.blog-title a,
+.blog-card h2 a,
+.blog-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+.blog-excerpt,
+.blog-card .excerpt,
+.blog-card > p {
+    padding: 0;
+    margin: 0.7rem 1.35rem 0;
+    color: #77736c;
+    font-size: 0.91rem;
+    line-height: 1.7;
+}
+
+.blog-meta {
+    padding: 0;
+    margin: 1rem 1.35rem 0;
+    gap: 0.8rem;
+    color: #8a857d;
+    font-size: 0.73rem;
+}
+
+.blog-meta i {
+    color: #a88664;
+}
+
+.read-more,
+.blog-card .read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    width: fit-content;
+    margin: auto 1.35rem 1.35rem;
+    padding: 0.65rem 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #c6a47e;
+    background: transparent;
+    color: #8f704f;
+    text-align: left;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more:hover,
+.blog-card .read-more:hover {
+    border-bottom-color: #6b7b60;
+    background: transparent;
+    color: #53664a;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 134, 100, 0.34);
+    box-shadow: 0 18px 38px rgba(48, 39, 29, 0.10);
+}
+
+.blog-card:hover .blog-image img,
+.blog-card:hover .blog-card-image img,
+.blog-card:hover > img {
+    transform: scale(1.045);
+}
+
+.blog-card:hover .blog-title a,
+.blog-card:hover h2 a,
+.blog-card:hover h3 a {
+    color: #6f805f;
+}
+
+.blog-card:focus-within {
+    outline: 2px solid #a88664;
+    outline-offset: 3px;
+}
+
+@media (max-width: 1050px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.35rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.15rem;
+    }
+
+    .blog-image,
+    .blog-card-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    .blog-card > img {
+        aspect-ratio: 16 / 9;
+    }
+
+    .blog-title,
+    .blog-card h2,
+    .blog-card h3 {
+        font-size: 1.18rem;
+    }
+
+    .blog-excerpt,
+    .blog-card .excerpt,
+    .blog-card > p {
+        font-size: 0.9rem;
+    }
+
+    .blog-card:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blog-card,
+    .blog-image img,
+    .blog-card-image img,
+    .blog-card > img {
+        transition: none !important;
+    }
+
+    .blog-card:hover,
+    .blog-card:hover img {
+        transform: none !important;
+    }
+}

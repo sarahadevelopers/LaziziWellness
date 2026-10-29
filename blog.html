@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Wellness Journal | Lazizi® Wellness | Seattle & Bellevue</title>
+    <meta name="description" content="Explore the Lazizi Wellness Journal for massage therapy insights, recovery, prenatal wellness, sports massage, stress management and mobile massage in Seattle and Bellevue.">
+    <meta name="author" content="Lazizi Wellness">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f8f4ed">
+
+    <link rel="canonical" href="https://laziziwellness.com/blog.html">
+    <link rel="icon" type="image/webp" href="/lazizi-favicon.webp">
+
+    <!-- Social sharing metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lazizi Wellness">
+    <meta property="og:title" content="Wellness Journal | Lazizi Wellness">
+    <meta property="og:description" content="Explore massage therapy, recovery, mobility, prenatal wellness and therapeutic massage insights from Lazizi Wellness.">
+    <meta property="og:url" content="https://laziziwellness.com/blog.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Fonts and styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- Blog structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Lazizi Wellness Journal",
+      "description": "Massage therapy, recovery, mobility and wellness articles from Lazizi Wellness.",
+      "url": "https://laziziwellness.com/blog.html",
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lazizi Wellness",
+        "url": "https://laziziwellness.com/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Lazizi Wellness",
+      "url": "https://laziziwellness.com/",
+      "areaServed": [
+        "Seattle",
+        "Bellevue",
+        "Redmond",
+        "Kirkland",
+        "Medina",
+        "Clyde Hill",
+        "Queen Anne",
+        "South Lake Union"
+      ],
+      "telephone": "+14402121577",
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- WhatsApp contact -->
+    <a
+        href="https://wa.me/14402121577"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Lazizi Wellness on WhatsApp"
+    >
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-inner">
+
+            <div class="logo">
+                <a href="/" aria-label="Lazizi Wellness home">
+                    Lazizi<sup class="r-sup">®</sup>
+                </a>
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blog.html" class="active" aria-current="page">Wellness Journal</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li>
+                    <a href="/index.html#booking" id="openBookingNavBtn" class="book-btn">
+                        <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                        Book a Session
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Wellness Journal</span>
+    </nav>
+
+    <!-- Page introduction -->
+    <header class="page-header fade-section">
+        <div>
+            <h1>Wellness Journal</h1>
+            <p>
+                Thoughtful insights on massage, recovery, mobility
+                and wellness across Seattle and Bellevue.
+            </p>
+
+            <div class="header-badge">
+                <i class="fas fa-spa" aria-hidden="true"></i>
+                Explore our wellness articles
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-container fade-section">
+
+        <section class="blog-header" aria-labelledby="journal-heading">
+            <h2 id="journal-heading">Knowledge for Your Wellbeing</h2>
+            <p>
+                Explore practical articles on therapeutic massage,
+                active recovery, stress management and everyday wellness.
+            </p>
+        </section>
+
+        <!-- Search -->
+        <section class="blog-search" aria-label="Search articles">
+            <form id="blogSearchForm" role="search">
+                <label class="sr-only" for="blogSearchInput">
+                    Search wellness articles
+                </label>
+
+                <input
+                    type="search"
+                    id="blogSearchInput"
+                    name="q"
+                    placeholder="Search articles..."
+                    autocomplete="off"
+                >
+
+                <button type="submit" aria-label="Search articles">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    Search
+                </button>
+            </form>
+        </section>
+
+        <!-- Working topic filters -->
+        <section class="blog-categories" aria-labelledby="topics-heading">
+            <h3 id="topics-heading">Explore Popular Topics</h3>
+
+            <div class="categories-wrapper" id="categoryFilters">
+                <button class="category-tag active" type="button" data-category="all" aria-pressed="true">
+                    All Articles
+                </button>
+                <button class="category-tag" type="button" data-category="recovery" aria-pressed="false">
+                    Recovery & Sports
+                </button>
+                <button class="category-tag" type="button" data-category="stress" aria-pressed="false">
+                    Stress & Sleep
+                </button>
+                <button class="category-tag" type="button" data-category="mobile" aria-pressed="false">
+                    Mobile Massage
+                </button>
+                <button class="category-tag" type="button" data-category="women" aria-pressed="false">
+                    Women's Wellness
+                </button>
+                <button class="category-tag" type="button" data-category="clinical" aria-pressed="false">
+                    Therapeutic Massage
+                </button>
+                <button class="category-tag" type="button" data-category="longevity" aria-pressed="false">
+                    Longevity & Wellness
+                </button>
+            </div>
+        </section>
+
+        <p id="resultsSummary" class="blog-results-summary" aria-live="polite">
+            Browse our wellness articles.
+        </p>
+
+        <!--
+          IMPORTANT:
+          These links are written directly into HTML for crawlability.
+          Keep these URLs aligned with the actual files in /blog/.
+        -->
+        <section class="blog-grid" id="blogGrid" aria-label="Wellness articles">
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/sports-massage-seattle.webp" alt="Sports massage recovery for Seattle-area cyclists on the Burke-Gilman Trail" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">The Burke-Gilman Trail: Massage and Recovery for Cyclists</h2>
+                <p class="blog-excerpt">Explore massage and recovery considerations for cyclists navigating Seattle's Burke-Gilman Trail.</p>
+                <a href="/blog/burke-gilman-cyclist-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/massage-studio-bellevue.webp" alt="Calm massage studio setting for Capitol Hill wellness routines in Seattle" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Stress & Wellbeing</div>
+                <h2 class="blog-title">Capitol Hill Wellness and Therapeutic Massage</h2>
+                <p class="blog-excerpt">Learn how massage can fit into a personal wellness routine in Seattle's Capitol Hill neighbourhood.</p>
+                <a href="/blog/capitol-hill-wellness-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/deep-tissue-massage-seattle.webp" alt="Deep tissue massage recovery session for cold-water immersion routines" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Cold Plunge and Deep Tissue Massage</h2>
+                <p class="blog-excerpt">Explore considerations around cold-water immersion, deep tissue massage and recovery routines.</p>
+                <a href="/blog/cold-plunge-deep-tissue-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/relaxation-massage-seattle.webp" alt="Relaxation massage for stress management and cortisol awareness" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Stress & Wellbeing</div>
+                <h2 class="blog-title">Cortisol, Stress Management and Massage in Seattle</h2>
+                <p class="blog-excerpt">Explore stress management and the role massage may play in a broader relaxation routine.</p>
+                <a href="/blog/cortisol-management-seattle-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="women">
+                <div class="blog-image">
+                    <img src="/images/aromatherapy-massage-bellevue.webp" alt="Aromatherapy massage for women's wellness and cycle-aware care" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Women's Wellness</div>
+                <h2 class="blog-title">Cycle Syncing and Massage for Women</h2>
+                <p class="blog-excerpt">Consider how individual comfort, changing needs and massage preferences can inform a wellness routine.</p>
+                <a href="/blog/cycle-syncing-massage-women.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/massage-therapist-bellevue.webp" alt="Massage therapist addressing desk-work tension in Bellevue" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Workplace Wellness</div>
+                <h2 class="blog-title">Ergonomic Burnout and Massage in Bellevue</h2>
+                <p class="blog-excerpt">Explore desk-work discomfort, movement breaks and massage as part of workplace self-care.</p>
+                <a href="/blog/ergonomic-burnout-bellevue-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/massage-therapist-seattle.webp" alt="Executive massage session for workplace recovery in Seattle" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Executive Wellness</div>
+                <h2 class="blog-title">The Executive System Reboot in Bellevue</h2>
+                <p class="blog-excerpt">Discover how a dedicated massage session can fit into a busy executive's recovery routine.</p>
+                <a href="/blog/executive-system-reboot-bellevue-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="women">
+                <div class="blog-image">
+                    <img src="/images/spa-massage-seattle.webp" alt="Spa massage setting for postpartum and fourth-trimester wellness" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Women's Wellness</div>
+                <h2 class="blog-title">The Fourth Trimester: Massage for New Mothers</h2>
+                <p class="blog-excerpt">Explore postpartum comfort and questions to consider when arranging massage after childbirth.</p>
+                <a href="/blog/fourth-trimester-massage-bellevue.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/detox-wrap-massage.webp" alt="Detox-focused massage for lymphatic drainage support in Bellevue" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Therapeutic Massage</div>
+                <h2 class="blog-title">Lymphatic Drainage Massage in Bellevue</h2>
+                <p class="blog-excerpt">Learn about manual lymphatic drainage and the importance of choosing an appropriate treatment.</p>
+                <a href="/blog/lymphatic-drainage-bellevue-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="mobile">
+                <div class="blog-image">
+                    <img src="/images/mobile-massage-seattle-home.webp" alt="Mobile massage table set up in a Mercer Island client's home" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Mobile Massage</div>
+                <h2 class="blog-title">Mobile Massage on Mercer Island</h2>
+                <p class="blog-excerpt">Explore the convenience and practical considerations of arranging massage in your own space.</p>
+                <a href="/blog/mercer-island-mobile-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="longevity">
+                <div class="blog-image">
+                    <img src="/images/wellness-treatment.webp" alt="Restorative wellness treatment supporting healthy ageing and longevity" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Longevity & Wellness</div>
+                <h2 class="blog-title">Mitochondrial Health, Longevity and Massage</h2>
+                <p class="blog-excerpt">Explore cellular energy and healthy ageing, while distinguishing emerging research from established evidence.</p>
+                <a href="/blog/mitochondrial-health-massage-longevity.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="mobile">
+                <div class="blog-image">
+                    <img src="/images/mobile-massage-seattle-home.webp" alt="In-home mobile massage service arranged in Medina, Washington" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Mobile Massage</div>
+                <h2 class="blog-title">Mobile Massage in Medina, Washington 98039</h2>
+                <p class="blog-excerpt">Learn what to consider when arranging an in-home massage appointment in Medina.</p>
+                <a href="/blog/mobile-massage-medina-98039.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/hot-stone-massage-seattle.webp" alt="Hot stone massage for post-hike recovery after Mount Si" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Mount Si Hike Recovery and Massage</h2>
+                <p class="blog-excerpt">Explore post-hike recovery practices and massage considerations after time on the trails.</p>
+                <a href="/blog/mount-si-recovery-hike-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/sports-massage-seattle.webp" alt="Sports recovery massage for active pickleball players in Bellevue" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Pickleball Elbow and Massage in Bellevue</h2>
+                <p class="blog-excerpt">Learn about elbow discomfort in active players and the role of professional assessment in recovery.</p>
+                <a href="/blog/pickleball-elbow-bellevue-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/medical-massage-seattle.webp" alt="Medical massage for foot and lower-leg discomfort from plantar fasciitis" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Therapeutic Massage</div>
+                <h2 class="blog-title">Plantar Fasciitis and Massage in Seattle</h2>
+                <p class="blog-excerpt">Explore foot discomfort, supportive self-care and where massage may fit alongside appropriate care.</p>
+                <a href="/blog/plantar-fasciitis-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="women">
+                <div class="blog-image">
+                    <img src="/images/prenatal-massage-bellevue.webp" alt="Prenatal massage in a supportive, comfortable Bellevue setting" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Women's Wellness</div>
+                <h2 class="blog-title">Prenatal Massage in Bellevue</h2>
+                <p class="blog-excerpt">Learn what to discuss with a qualified massage therapist when considering massage during pregnancy.</p>
+                <a href="/blog/prenatal-massage-bellevue.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/swedish-massage-seattle.webp" alt="Swedish massage for remote-work relaxation in Bellevue" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Workplace Wellness</div>
+                <h2 class="blog-title">Remote Work and Massage in Bellevue</h2>
+                <p class="blog-excerpt">Explore ways to incorporate movement, breaks and massage into a remote-work wellness routine.</p>
+                <a href="/blog/remote-tech-massage-bellevue.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/swedish-massage-treatment.webp" alt="Therapeutic shoulder massage for rotator cuff recovery in Seattle" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Rotator Cuff Discomfort and Massage in Seattle</h2>
+                <p class="blog-excerpt">Explore shoulder discomfort, activity modification and the importance of appropriate assessment.</p>
+                <a href="/blog/rotator-cuff-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/medical-massage-seattle.webp" alt="Medical massage for lower-back and hip discomfort from sciatica" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Therapeutic Massage</div>
+                <h2 class="blog-title">Sciatica and Massage in Bellevue</h2>
+                <p class="blog-excerpt">Learn about radiating discomfort and why symptoms may need assessment before choosing a treatment.</p>
+                <a href="/blog/sciatica-massage-bellevue.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/sports-massage-seattle.webp" alt="Sports massage recovery for runners after the Seattle Marathon" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Seattle Marathon Recovery and Massage</h2>
+                <p class="blog-excerpt">Explore recovery planning after a marathon, including rest, gradual movement and massage considerations.</p>
+                <a href="/blog/seattle-marathon-recovery-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="recovery">
+                <div class="blog-image">
+                    <img src="/images/hot-stone-massage-seattle.webp" alt="Hot stone massage for ski-season preparation and recovery" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Recovery & Sports</div>
+                <h2 class="blog-title">Ski Season Preparation and Massage</h2>
+                <p class="blog-excerpt">Explore preparation for ski season through conditioning, recovery and appropriate professional guidance.</p>
+                <a href="/blog/ski-season-prep-acl-prevention-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/relaxation-massage-seattle.webp" alt="Relaxation massage as part of a healthy sleep and bedtime routine" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Sleep & Wellbeing</div>
+                <h2 class="blog-title">Sleep, REM and Massage in Seattle</h2>
+                <p class="blog-excerpt">Explore sleep habits, relaxation and the potential place of massage in a healthy bedtime routine.</p>
+                <a href="/blog/sleep-rem-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/deep-tissue-massage-seattle.webp" alt="Deep tissue massage for desk-related neck and shoulder tension" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Workplace Wellness</div>
+                <h2 class="blog-title">The Tech Neck Reset in Seattle</h2>
+                <p class="blog-excerpt">Explore neck and shoulder discomfort associated with desk work, posture habits and massage.</p>
+                <a href="/blog/tech-neck-reset-seattle-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+                <div class="blog-image">
+                    <img src="/images/couples-massage-seattle.webp" alt="Gentle couples massage setting for stress and tension relief" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Therapeutic Massage</div>
+                <h2 class="blog-title">TMJ Discomfort and Massage in Seattle</h2>
+                <p class="blog-excerpt">Learn about jaw discomfort, treatment options and when to seek advice from an appropriate clinician.</p>
+                <a href="/blog/tmj-massage-seattle.html" class="read-more">Read Article →</a>
+            </article>
+
+            <article class="blog-card" data-category="stress">
+                <div class="blog-image">
+                    <img src="/images/wellness-treatment.webp" alt="Restorative wellness treatment for nervous system relaxation and vagal tone" loading="lazy" decoding="async" width="800" height="500" onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8dfd6/a88664?text=Lazizi+Wellness';">
+                </div>
+                <div class="blog-category">Stress & Wellbeing</div>
+                <h2 class="blog-title">The Vagus Nerve, Stress and Massage</h2>
+                <p class="blog-excerpt">Explore the relationship between stress, relaxation and current understanding of the nervous system.</p>
+                <a href="/blog/vagus-nerve-stress-seattle-massage.html" class="read-more">Read Article →</a>
+            </article>
+
+        </section>
+
+        <!-- Search and pagination feedback -->
+        <p id="noResults" hidden>
+            No matching articles found. Try a different search or topic.
+        </p>
+
+        <nav class="pagination" id="pagination" aria-label="Article pages"></nav>
+
+        <!-- Featured article -->
+        <section class="featured-article" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Read</h2>
+            <p>
+                Explore our guide to neck and shoulder discomfort associated
+                with desk work and everyday screen use.
+            </p>
+            <a href="/blog/tech-neck-reset-seattle-massage.html" class="read-more">
+                Read the Tech Neck Reset article →
+            </a>
+        </section>
+
+        <!-- Booking CTA -->
+        <section class="blog-booking-cta">
+            <h2>Make Time for Your Wellbeing</h2>
+            <p>
+                Have questions about massage services or want to arrange a session?
+                Explore our services or contact our team.
+            </p>
+            <a href="/services.html" class="book-btn">Explore Our Services</a>
+            <a href="/index.html#contact" class="read-more">Contact Lazizi Wellness →</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <div>
+                <div class="logo">
+                    <a href="/">Lazizi<sup class="r-sup">®</sup> Wellness</a>
+                </div>
+                <p>Massage and recovery services for Seattle and Bellevue.</p>
+                <p>Serving Seattle, Bellevue, Redmond and Kirkland.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <a href="/">Home</a>
+                <a href="/services.html">Services</a>
+                <a href="/blog.html">Wellness Journal</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>
+                    Phone:
+                    <a href="tel:+14402121577">+1 (440) 212-1577</a>
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:info@laziziwellness.com">
+                        info@laziziwellness.com
+                    </a>
+                </p>
+                <p>Bellevue & Seattle metro</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © <span id="currentYear"></span> Lazizi Wellness. All rights reserved.
+            <br>
+            Designed &amp; Developed by
+            <a
+                href="https://sarahadevelopers.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Saraha Developers</a>
+        </div>
+    </footer>
+
+    <!--
+      This page intentionally does not load the old blog.js.
+      Article links are static HTML. This script handles only
+      client-side search, topic filters, pagination and navigation.
+    -->
+    <script>
+    (() => {
+        "use strict";
+
+        const grid = document.getElementById("blogGrid");
+        const cards = Array.from(grid.querySelectorAll(".blog-card"));
+        const searchForm = document.getElementById("blogSearchForm");
+        const searchInput = document.getElementById("blogSearchInput");
+        const filterButtons = Array.from(
+            document.querySelectorAll("#categoryFilters [data-category]")
+        );
+        const pagination = document.getElementById("pagination");
+        const resultsSummary = document.getElementById("resultsSummary");
+        const noResults = document.getElementById("noResults");
+        const currentYear = document.getElementById("currentYear");
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        const postsPerPage = 9;
+
+        let activeCategory = "all";
+        let query = "";
+        let currentPage = 1;
+        let filteredCards = [...cards];
+
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+
+        // Second-line image fallback: if the placeholder URL also fails,
+        // hide the image frame so the card layout stays intact without a broken icon.
+        grid.querySelectorAll(".blog-image img").forEach(img => {
+            img.addEventListener("error", () => {
+                const frame = img.closest(".blog-image");
+                if (frame) frame.hidden = true;
+            }, { once: true });
+        });
+
+        function getFilteredCards() {
+            const normalizedQuery = query.trim().toLowerCase();
+
+            return cards.filter(card => {
+                const category = card.dataset.category || "";
+                const text = card.textContent.toLowerCase();
+                const matchesCategory =
+                    activeCategory === "all" ||
+                    category === activeCategory;
+                const matchesSearch =
+                    !normalizedQuery || text.includes(normalizedQuery);
+
+                return matchesCategory && matchesSearch;
+            });
+        }
+
+        function makePageButton(label, page, disabled, active) {
+            const button = document.createElement("button");
+
+            button.type = "button";
+            button.textContent = label;
+            button.disabled = disabled;
+
+            if (active) {
+                button.classList.add("active");
+                button.setAttribute("aria-current", "page");
+            }
+
+            button.addEventListener("click", () => {
+                currentPage = page;
+                render();
+
+                grid.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+
+            pagination.appendChild(button);
+        }
+
+        function renderPagination(totalPages) {
+            pagination.replaceChildren();
+
+            if (totalPages <= 1) return;
+
+            makePageButton(
+                "← Previous",
+                currentPage - 1,
+                currentPage === 1,
+                false
+            );
+
+            for (let page = 1; page <= totalPages; page++) {
+                const nearCurrent = Math.abs(page - currentPage) <= 1;
+                const isEdge = page === 1 || page === totalPages;
+
+                if (nearCurrent || isEdge) {
+                    makePageButton(
+                        String(page),
+                        page,
+                        false,
+                        page === currentPage
+                    );
+                } else if (
+                    page === currentPage - 2 ||
+                    page === currentPage + 2
+                ) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.textContent = "…";
+                    ellipsis.setAttribute("aria-hidden", "true");
+                    pagination.appendChild(ellipsis);
+                }
+            }
+
+            makePageButton(
+                "Next →",
+                currentPage + 1,
+                currentPage === totalPages,
+                false
+            );
+        }
+
+        function render() {
+            filteredCards = getFilteredCards();
+
+            const totalPages = Math.ceil(
+                filteredCards.length / postsPerPage
+            );
+
+            if (totalPages > 0 && currentPage > totalPages) {
+                currentPage = totalPages;
+            }
+
+            if (currentPage < 1) currentPage = 1;
+
+            const start = (currentPage - 1) * postsPerPage;
+            const end = start + postsPerPage;
+            const visibleCards = new Set(
+                filteredCards.slice(start, end)
+            );
+
+            cards.forEach(card => {
+                card.hidden = !visibleCards.has(card);
+            });
+
+            noResults.hidden = filteredCards.length !== 0;
+
+            resultsSummary.textContent =
+                `${filteredCards.length} article` +
+                `${filteredCards.length === 1 ? "" : "s"} found`;
+
+            renderPagination(totalPages);
+        }
+
+        searchForm.addEventListener("submit", event => {
+            event.preventDefault();
+            query = searchInput.value;
+            currentPage = 1;
+            render();
+        });
+
+        searchInput.addEventListener("input", () => {
+            query = searchInput.value;
+            currentPage = 1;
+            render();
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                activeCategory = button.dataset.category;
+                currentPage = 1;
+
+                filterButtons.forEach(filter => {
+                    const isActive = filter === button;
+                    filter.classList.toggle("active", isActive);
+                    filter.setAttribute("aria-pressed", String(isActive));
+                });
+
+                render();
+            });
+        });
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = navLinks.classList.toggle("show");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
+            });
+        }
+
+        // Reveal sections that use the existing fade-in CSS.
+        const fadeSections = document.querySelectorAll(".fade-section");
+
+        if ("IntersectionObserver" in window) {
+            const fadeObserver = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            fadeObserver.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.05 }
+            );
+
+            fadeSections.forEach(section => {
+                fadeObserver.observe(section);
+            });
+        } else {
+            fadeSections.forEach(section => {
+                section.classList.add("visible");
+            });
+        }
+
+        // Render the article listing.
+        render();
+    })();
+    </script>
+
+</body>
+</html>
